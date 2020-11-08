@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.0)
+project(graphics-world)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
+set(SOURCE_FILES
+ ./Circle.cpp
+ ./Circle.h
+ ./Cornercut.cpp
+ ./Cornercut.h
+ ./GraphicsWorld.cpp
+ ./GraphicsWorld.h
+ ./Point.cpp
+ ./Point.h
+ ./Rectangle.cpp
+ ./Rectangle.h
+ ./Shape.cpp
+ ./Shape.h
+ ./Square.cpp
+ ./Square.h
+ )
+add_executable(${PROJECT_NAME} ${SOURCE_FILES})
